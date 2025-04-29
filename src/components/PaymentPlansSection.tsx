@@ -235,9 +235,9 @@ const PaymentPlansSection = () => {
               <p className="text-gray-500 text-sm mb-4">{plan.description}</p>
               <p className="text-4xl font-extrabold text-gray-900 mb-6">
                 ₹{plan.amount}
-                <span className="text-base text-gray-500 font-medium">
+                <span className="text-base text-gray-500 font-normal">
                   {" "}
-                  /month
+                  /{isAnnual ? "year" : "month"}
                 </span>
               </p>
 
