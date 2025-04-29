@@ -1,30 +1,50 @@
-const styles = {
-  navbar: "bg-white py-2 fixed w-full top-0 z-50",
-  container:
-    "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center",
-  logo: "flex items-center text-xl font-bold text-blue-600",
-  toggleButton:
-    "text-gray-700 focus:outline-none p-2 rounded-md hover:bg-gray-100",
+const DashboardStyles = {
+  // Main container
+  container: "min-h-screen flex flex-col lg:flex-row bg-white",
 
-  // Nav links for desktop and mobile
-  navLinks: "md:flex md:items-center md:space-x-4 transition-all duration-300",
-  openMenu:
-    "absolute top-16 left-0 right-0 flex flex-col bg-white shadow-md py-4 px-4 space-y-3 md:relative md:top-0 md:shadow-none md:flex-row md:py-0 md:space-y-0",
-  closedMenu: "hidden md:flex md:items-center",
-  link: "text-gray-700 hover:text-green-600 py-2 px-3 rounded-md transition-colors duration-200 text-sm md:text-base font-medium",
+  // Mobile header
+  mobileToggle:
+    "flex lg:hidden justify-between items-center bg-gray-800 text-white px-4 py-3 sticky top-0 z-40",
+  mobileTitle: "text-xl sm:text-2xl font-bold",
+  toggleButton: "focus:outline-none",
+  toggleIcon: "text-xl sm:text-2xl",
 
-  // Action buttons (login, signup, dashboard)
-  actionButtons: "hidden md:flex md:items-center md:space-x-3",
-  loginButton:
-    "text-gray-700 border border-gray-300 py-1 px-4 rounded-md hover:bg-gray-50 transition-colors text-sm font-medium",
-  getStartedButton:
-    "bg-green-600 text-white py-1 px-4 rounded-md hover:bg-green-700 transition-colors text-sm font-medium",
-  dashboardButton:
-    "text-green-600 border border-green-600 py-1 px-4 rounded-md hover:bg-green-50 transition-colors text-sm font-medium mr-2",
+  // Sidebar
+  sidebar:
+    "bg-white fixed top-0 left-0 text-gray-700 w-64 py-4 sm:py-6 px-3 sm:px-4 shadow-md flex flex-col transition-transform duration-300",
+  logoContainer: "flex items-center justify-center py-3 sm:py-4 mb-4 sm:mb-6",
+  logoImage: "w-8 h-8 sm:w-10 sm:h-10",
+  logoText: "text-xl sm:text-2xl font-bold text-gray-800 ml-3",
 
-  // Mobile specific styles
-  mobileActionButton:
-    "w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition-colors text-sm font-medium my-1",
+  // Navigation
+  nav: "space-y-2 sm:space-y-4 flex-1",
+  navLink:
+    "flex items-center py-2 sm:py-2.5 px-3 sm:px-4 rounded transition-colors duration-200 text-gray-700 hover:bg-gray-100 hover:text-gray-900",
+  navIcon: "mr-3 text-gray-600",
+  navText: "text-sm sm:text-base font-medium",
+  activeLink: "bg-green-100 text-gray-900",
+
+  // Sidebar footer
+  sidebarFooter: "mt-auto border-t border-gray-300 p-4",
+  credits: "text-sm font-medium text-gray-600 mb-2",
+  avatarContainer: "cursor-pointer",
+  avatarImage:
+    "w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gray-300",
+  userInfo: "ml-3",
+  userName: "text-sm font-semibold text-gray-800",
+  userEmail: "text-xs text-gray-500",
+
+  // User card
+  userCard:
+    "absolute right-4 bottom-20 bg-white border border-gray-300 rounded-md shadow-lg p-4 z-50 w-56",
+  cardHeader: "flex items-center mb-2",
+  cardAvatar:
+    "w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gray-300 mr-2",
+  cardUserName: "font-semibold text-sm",
+  cardUserEmail: "text-xs text-gray-500",
+
+  // Main content
+  mainContent: "flex-1 p-4 sm:p-6 md:p-8 lg:p-10",
 };
 
-export default styles;
+export default DashboardStyles;
