@@ -28,9 +28,9 @@ const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route index element={<Home />}></Route>
-        <Route path="/about" element={<AboutUs />}></Route>
-        <Route path="/team" element={<Team />}></Route>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/contact" element={<ContactUs />} />
